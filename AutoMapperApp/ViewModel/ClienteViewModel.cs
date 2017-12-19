@@ -15,7 +15,7 @@ namespace AutoMapperApp.ViewModel
         [Display(Name = "Data de Nascimento")]
         //máscara para data
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd")]
-        [DataType(DataType.Date, ErrorMessage = "Data em formato iválido.")]
+        [DataType(DataType.Date, ErrorMessage = "Data em formato inválido.")]
         public string Sobrenome { get; set; }
         public DateTime DataNascimento { get; set; }
         public bool Ativo { get; set; }
