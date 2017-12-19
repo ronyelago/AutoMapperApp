@@ -13,6 +13,7 @@ namespace AutoMapperApp.ViewModel
 
         [Required(ErrorMessage = "Falor preencher o campo de data de nascimento.")]
         [Display(Name = "Data de Nascimento")]
+        //máscara para data
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd")]
         [DataType(DataType.Date, ErrorMessage = "Data em formato iválido.")]
         public string Sobrenome { get; set; }
